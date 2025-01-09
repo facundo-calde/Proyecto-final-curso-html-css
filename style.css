@@ -1,56 +1,70 @@
 /*NORMALIZACION:*/
-*{
-    box-sizing: border-box; /*Mantiene el ancho y alto a pesar del padding y border*/
+* {
+    box-sizing: border-box;
+    /*Mantiene el ancho y alto a pesar del padding y border*/
     color: black;
     font-family: "Cormorant", serif;
-    list-style: none; /*Quita puntos y decoracion de las listas*/
+    list-style: none;
+    /*Quita puntos y decoracion de las listas*/
     margin: 0;
     padding: 0;
-    text-decoration: none; /*Quita el subyrayado de los enlaces*/
-    color:white
+    text-decoration: none;
+    /*Quita el subyrayado de los enlaces*/
+    color: white
 }
 
-header{
-    align-items: center; /*Centra verticalmente*/
-    background-color: rgb(232, 232, 232);
-    display: flex; /*Los elementos se ponga en linea*/
-    justify-content: space-between; /*Los elementos se separan*/
+header {
+    align-items: center;
+    /*Centra verticalmente*/
+    background-color: rgb(242, 241, 241);
+    box-shadow: 0px 0px 2px #616a6b;
+    display: flex;
+    /*Los elementos se ponga en linea*/
+    justify-content: space-between;
+    /*Los elementos se separan*/
     padding: 15px 3%;
-    position: fixed; /*El header se quede fijo en la parte superior*/
+    position: fixed;
+    /*El header se quede fijo en la parte superior*/
     right: 0;
     top: 0;
     width: 100%;
-    z-index: 100; /*El header se muestre por encima*/
+    z-index: 100;
+    /*El header se muestre por encima*/
 }
 
-.logo{
-    color: #424949 ;
+.logo {
+    color: #424949;
     font-size: 30px;
     font-weight: 600;
     text-shadow: 1px 1px 2px #424949a2;
 }
 
-.navlist{
-    display: flex; /*Los elementos de ul se pongan en linea*/
+.navlist {
+    display: flex;
+    /*Los elementos de ul se pongan en linea*/
 }
 
-.navlist a{
-    border-bottom: 2px solid transparent; /*Subrayado transparente*/
+.navlist a {
+    border-bottom: 2px solid transparent;
+    /*Subrayado transparente*/
     color: #424949;
     font-size: 15px;
     font-weight: 900;
     line-height: 100%;
     letter-spacing: 1px;
-    margin-left: 60px; /*Separar las palabras*/  
-    text-shadow: 1px 1px 3px #424949a2; 
+    margin-left: 60px;
+    /*Separar las palabras*/
+    text-shadow: 1px 1px 3px #424949a2;
     text-transform: uppercase;
-    transition: all 0.5 ease; /*Animar(transicionar) todas las caracteristicas*/
+    transition: all 0.5 ease;
+    /*Animar(transicionar) todas las caracteristicas*/
 }
 
-.navlist a:hover{
+.navlist a:hover {
     border-bottom: 2px solid #42494939;
 }
-.navlist a:active{
+
+.navlist a:active {
     background-color: #797d7f59;
     border-bottom: 1px solid #ffffff;
     border-radius: 5px;
@@ -58,73 +72,97 @@ header{
     padding: 2px;
 }
 
-#menu-icon{
-    display: none; /*Lo pongo en none para que se vea cuando la pagina esta colapsada de forma horizontal*/
+#menu-icon {
+    display: none;
+    /*Lo pongo en none para que se vea cuando la pagina esta colapsada de forma horizontal*/
 }
-#menu-icon{
-    cursor: pointer; /*para que aparezca la manito cuando pasamos el mouse encima*/
+
+#menu-icon {
+    cursor: pointer;
+    /*para que aparezca la manito cuando pasamos el mouse encima*/
     font-size: 35px;
-    z-index: 101; /*para que este sobre el header*/
+    z-index: 101;
+    /*para que este sobre el header*/
 }
-#menu-toggle{
-    display: none; /*Nunca quiero que se vea el checkbox*/
+
+#menu-toggle {
+    display: none;
+    /*Nunca quiero que se vea el checkbox*/
 }
-.meno-icon-action{
-    display: none; /*para que no se le pueda hacer click*/
+
+.meno-icon-action {
+    display: none;
+    /*para que no se le pueda hacer click*/
 }
-.hero{
-    align-items: center; /*Alinear verticalmente el hero*/
-    background: linear-gradient(245.59deg,#1b4f72 0%, #427ea5 25%,#5dade2 75%); /*Fondo gradiente*/
-    display: grid; /*El hero se pueda dividir en 2 columnas*/
-    gap: 2rem; /*haya espacio de 2 rem entre las columnas*/
-    grid-template-columns: 1fr 1fr; /*Dos columnas*/
+
+.hero {
+    align-items: center;
+    /*Alinear verticalmente el hero*/
+    background: linear-gradient(245.59deg, #1b4f72 0%, #427ea5 25%, #5dade2 75%);
+    /*Fondo gradiente*/
+    display: grid;
+    /*El hero se pueda dividir en 2 columnas*/
+    gap: 2rem;
+    /*haya espacio de 2 rem entre las columnas*/
+    grid-template-columns: 1fr 1fr;
+    /*Dos columnas*/
     height: 100%;
     min-height: 100vh;
-    position:relative;  /*Relativo al contenedor (nos permite usar top, bottom, left y right*/
+    position: relative;
+    /*Relativo al contenedor (nos permite usar top, bottom, left y right*/
     width: 100%;
 }
-section{
-    padding:0 8%;
+
+section {
+    box-shadow: 0px 0px 2px #616a6b;
+    padding: 0 8%;
 }
-.hero-text h5{
+
+.hero-text h5 {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 25px;
     text-shadow: 1px 1px 3px #616a6b;
 }
-.hero-text h1{
-    font-family: "Crimson Text", serif ;
+
+.hero-text h1 {
+    font-family: "Crimson Text", serif;
     font-size: 50px;
     line-height: 1;
     margin: 0 0 30px;
     text-shadow: 1px 1px 3px #616a6b;
 }
-.hero-text h4{
+
+.hero-text h4 {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px #616a6b;
 }
-.hero-text p{
-    font-size: 90%;
+
+.hero-text p {
+    font-size: 1.2em;
     line-height: 1.9;
     margin-bottom: 40px;
     text-shadow: 1px 1px 3px #616a6b;
 }
-.hero-img img{
+
+.hero-img img {
     height: auto;
     width: 400px;
     margin: 10% 0 0 10%;
     transition: all 1.5s linear;
 }
-.hero-img img:hover{
+
+.hero-img img:hover {
     width: 450px;
     opacity: 0.6;
 }
-.hero-text a{
-    background-color: #797d7f;
+
+.hero-text a {
+    background-color: #343535;
     border: 1px solid transparent;
     border-radius: 30px;
     display: inline-block;
@@ -136,42 +174,50 @@ section{
     text-transform: uppercase;
     transition: all 0.5s ease;
 }
-.hero-text a:hover{
+
+.hero-text a:hover {
     background-color: transparent;
     border: 1px solid white;
     transform: translatex(8px);
 }
-.hero-text a.portfolio{
+
+.hero-text a.portfolio {
     background-color: transparent;
     border: 1px solid white;
     margin-left: 20px;
 }
-.hero-text a.portfolio i{
+
+.hero-text a.portfolio i {
     margin-right: 5px;
 }
-.icons{
-    display:block;
+
+.icons {
+    display: block;
     padding: 0 3%;
     position: absolute;
     transform: translateY(-50%);
-    top:50vh;
+    top: 50vh;
 }
-.icons i{
+
+.icons i {
     display: block;
     margin: 26px 0;
     font-size: 24px;
     transition: all .5s ease;
 }
-.icons i:hover{
-    color:#424949;
+
+.icons i:hover {
+    color: #424949;
     transform: translateY(-5px);
 }
-.scroll-down{
+
+.scroll-down {
     bottom: 6%;
     position: absolute;
     right: 3%;
 }
-.scroll-down i{
+
+.scroll-down i {
     background-color: #21383d;
     border-radius: 30px;
     display: block;
@@ -179,80 +225,160 @@ section{
     padding: 12px;
     transition: all .5s ease;
 }
-.scroll-down i:hover{
+
+.scroll-down i:hover {
     transform: translateY(-5px);
 }
+
+.about-me {
+    align-items: center;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70%;
+    min-height: 70vh;
+    position: relative;
+    width: 100%;
+}
+
+.about-me-text h2 {
+    color: #424949;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    text-shadow: 1px 1px 2px #777d7db7;
+}
+
+.about-me-text p {
+    color: #424949;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.9;
+    margin-bottom: 5%;
+    text-indent: 40px;
+    text-shadow: 1px 1px 3px #7f8383b7;
+}
+.about-me b{
+    color: #ffc70b;
+    letter-spacing: 1px;
+}
+
+.about-me-img img {
+    height: auto;
+    width: 400px;
+    margin: 10% 0 0 10%;
+}
+
+
+
+
 /*aca vamos a hacer mediaqueries para que la web sea responsive*/
-@media (max-width:992px){
-    .navlist a{
+@media (max-width:992px) {
+    .navlist a {
         font-size: 90%;
     }
-    section{
+
+    section {
         padding: 0 3%;
         transition: .2s;
     }
-    .hero-text{
+
+    .hero-text {
         padding-top: 0;
     }
-    .hero-text p{
+
+    .hero-text p {
         font-size: 70%;
     }
-    .hero-img{
+
+    .about-me p {
+        font-size: 70%;
+    }
+
+    .hero-img {
         text-align: center;
     }
-    .hero-img img{
+
+    .hero-img img {
         margin: 10% 0 0 10%;
         width: 80%;
     }
-    .icons{
+
+    .about-me img {
+        width: 80%;
+    }
+
+    .icons {
         display: none;
     }
-    .scroll-down{
+
+    .scroll-down {
         display: none;
     }
 }
-@media (max-width:768px){
-    .menu-icon-action{
+
+@media (max-width:768px) {
+    .menu-icon-action {
         display: block;
     }
-    #menu-icon{
-        color:#424949;
+
+    #menu-icon {
+        color: #343535;
         display: block;
     }
-    .hero-text{
+
+    .hero-text {
         text-align: center;
         padding-top: 100px;
     }
-    .hero-img img{
+
+    .hero-img img {
         margin: 0;
     }
-    .hero{
+
+    .about-me img {
+        margin: 0;
+    }
+
+    .about-me {
         gap: 1rem;
         grid-template-columns: 1fr;
         height: 100%;
     }
-    .navlist{
+
+    .hero {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .navlist {
         align-items: center;
-        background-color: #616a6b;
+        background-color: #343535;
         display: flex;
         flex-direction: column;
         height: 180px;
         padding: 30px 20px;
-        position: absolute;        
+        position: absolute;
         right: -100%;
         top: 100%;
         width: 200px;
         transition: all .5 ease;
     }
-    .navlist a{
+
+    .navlist a {
         color: white;
         display: block;
         margin: 7px 0;
     }
-    .navlist a:hover{
-        border-bottom: 2px solid #42494989;
+
+    .navlist a:hover {
+        border-bottom: 2px solid #e6e7e789;
     }
-    #menu-toggle:checked + label.menu-icon-action + ul{
+
+    #menu-toggle:checked+label.menu-icon-action+ul {
         right: 0;
     }
 }
