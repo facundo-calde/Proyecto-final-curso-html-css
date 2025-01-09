@@ -16,7 +16,7 @@
 header {
     align-items: center;
     /*Centra verticalmente*/
-    background-color: rgb(242, 241, 241);
+    background-color: #f2f3f4;
     box-shadow: 0px 0px 2px #616a6b;
     display: flex;
     /*Los elementos se ponga en linea*/
@@ -232,11 +232,11 @@ section {
 
 .about-me {
     align-items: center;
-    background: white;
+    background: #f2f3f4;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 70%;
-    min-height: 70vh;
+    height: 100%;
+    min-height: 100vh;
     position: relative;
     width: 100%;
 }
@@ -246,7 +246,7 @@ section {
     font-size: 23px;
     font-weight: 800;
     letter-spacing: 0.5px;
-    margin-bottom: 5%;
+    margin: 10% 0 5%;
     padding-top: 3%;
     text-shadow: 1px 1px 2px #777d7db7;
 }
@@ -263,6 +263,7 @@ section {
 .about-me b{
     color: #ffc70b;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 2px white;
 }
 
 .about-me-img img {
