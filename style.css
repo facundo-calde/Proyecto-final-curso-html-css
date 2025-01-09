@@ -1,0 +1,258 @@
+/*NORMALIZACION:*/
+*{
+    box-sizing: border-box; /*Mantiene el ancho y alto a pesar del padding y border*/
+    color: black;
+    font-family: "Cormorant", serif;
+    list-style: none; /*Quita puntos y decoracion de las listas*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none; /*Quita el subyrayado de los enlaces*/
+    color:white
+}
+
+header{
+    align-items: center; /*Centra verticalmente*/
+    background-color: rgb(232, 232, 232);
+    display: flex; /*Los elementos se ponga en linea*/
+    justify-content: space-between; /*Los elementos se separan*/
+    padding: 15px 3%;
+    position: fixed; /*El header se quede fijo en la parte superior*/
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100; /*El header se muestre por encima*/
+}
+
+.logo{
+    color: #424949 ;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #424949a2;
+}
+
+.navlist{
+    display: flex; /*Los elementos de ul se pongan en linea*/
+}
+
+.navlist a{
+    border-bottom: 2px solid transparent; /*Subrayado transparente*/
+    color: #424949;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: ;
+    margin-left: 60px; /*Separar las palabras*/  
+    text-shadow: 1px 1px 3px #424949a2; 
+    text-transform: uppercase;
+    transition: all 0.5 ease; /*Animar(transicionar) todas las caracteristicas*/
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid #42494939;
+}
+.navlist a:active{
+    background-color: #797d7f59;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 2px;
+}
+
+#menu-icon{
+    display: none; /*Lo pongo en none para que se vea cuando la pagina esta colapsada de forma horizontal*/
+}
+#menu-icon{
+    cursor: pointer; /*para que aparezca la manito cuando pasamos el mouse encima*/
+    font-size: 35px;
+    z-index: 101; /*para que este sobre el header*/
+}
+#menu-toggle{
+    display: none; /*Nunca quiero que se vea el checkbox*/
+}
+.meno-icon-action{
+    display: none; /*para que no se le pueda hacer click*/
+}
+.hero{
+    align-items: center; /*Alinear verticalmente el hero*/
+    background: linear-gradient(245.59deg,#1b4f72 0%, #427ea5 25%,#5dade2 75%); /*Fondo gradiente*/
+    display: grid; /*El hero se pueda dividir en 2 columnas*/
+    gap: 2rem; /*haya espacio de 2 rem entre las columnas*/
+    grid-template-columns: 1fr 1fr; /*Dos columnas*/
+    height: 100%;
+    min-height: 100vh;
+    position:relative;  /*Relativo al contenedor (nos permite usar top, bottom, left y right*/
+    width: 100%;
+}
+section{
+    padding:0 8%;
+}
+.hero-text h5{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px #616a6b;
+}
+.hero-text h1{
+    font-family: "Crimson Text", serif ;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 30px;
+    text-shadow: 1px 1px 3px #616a6b;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #616a6b;
+}
+.hero-text p{
+    font-size: 90%;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px #616a6b;
+}
+.hero-img img{
+    height: auto;
+    width: 400px;
+    margin: 10% 0 0 10%;
+    transition: all 1.5s linear;
+}
+.hero-img img:hover{
+    width: 450px;
+    opacity: 0.6;
+}
+.hero-text a{
+    background-color: #797d7f;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 3px #616a6b;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translatex(8px);
+}
+.hero-text a.portfolio{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.portfolio i{
+    margin-right: 5px;
+}
+.icons{
+    display: ;
+    padding: 0 3%;
+    position: absolute;
+    transform: translateY(-50%);
+    top:50vh;
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+.icons i:hover{
+    color:#424949;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    bottom: 6%;
+    position: absolute;
+    right: 3%;
+}
+.scroll-down i{
+    background-color: #21383d;
+    border-radius: 30px;
+    display: block;
+    font-size: 25px;
+    padding: 12px;
+    transition: all .5s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+/*aca vamos a hacer mediaqueries para que la web sea responsive*/
+@media (max-width:992px){
+    .navlist a{
+        font-size: 90%;
+    }
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 0;
+    }
+    .hero-text p{
+        font-size: 70%;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        margin: 10% 0 0 10%;
+        width: 80%;
+    }
+    .icons{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+@media (max-width:768px){
+    .menu-icon-action{
+        display: block;
+    }
+    #menu-icon{
+        color:#424949;
+        display: block;
+    }
+    .hero-text{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .hero-img img{
+        margin: 0;
+    }
+    .hero{
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    .navlist{
+        align-items: center;
+        background-color: #616a6b;
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+        padding: 30px 20px;
+        position: absolute;        
+        right: -100%;
+        top: 100%;
+        width: 200px;
+        transition: all .5 ease;
+    }
+    .navlist a{
+        color: white;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist a:hover{
+        border-bottom: 2px solid #42494989;
+    }
+    #menu-toggle:checked + label.menu-icon-action + ul{
+        right: 0;
+    }
+}
