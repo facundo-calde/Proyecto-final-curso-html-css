@@ -16,13 +16,13 @@
 header {
     align-items: center;
     /*Centra verticalmente*/
-    background-color: #f2f3f4;
-    box-shadow: 0px 0px 2px #616a6b;
+    background-color: #f9fafaea;
+    box-shadow: 0px 0px 2px #616a6b7d;
     display: flex;
     /*Los elementos se ponga en linea*/
     justify-content: space-between;
     /*Los elementos se separan*/
-    padding: 15px 3%;
+    padding: 10px 3%;
     position: fixed;
     /*El header se quede fijo en la parte superior*/
     right: 0;
@@ -47,7 +47,7 @@ header {
 .navlist a {
     border-bottom: 2px solid transparent;
     /*Subrayado transparente*/
-    color: #424949;
+    color: #2471a3;
     font-size: 15px;
     font-weight: 900;
     line-height: 100%;
@@ -114,7 +114,7 @@ header {
 }
 
 section {
-    box-shadow: 0px 0px 2px #616a6b;
+    box-shadow: 0px 0px 2px #616a6b4a;
     padding: 0 8%;
 }
 
@@ -169,10 +169,21 @@ section {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.4;
-    padding: 10px 20px;
+    padding: 5px 15px;
     text-shadow: 1px 1px 3px #616a6b;
     text-transform: uppercase;
     transition: all 0.5s ease;
+}
+
+.hero-text a.hero-text-portfolio {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.github {
+    border: 1px solid transparent;
+    margin-left: 20px;
 }
 
 .hero-text a:hover {
@@ -181,13 +192,11 @@ section {
     transform: translatex(8px);
 }
 
-.hero-text a.portfolio {
-    background-color: transparent;
-    border: 1px solid white;
-    margin-left: 20px;
+.hero-text a.hero-text-portfolio i {
+    margin-right: 5px;
 }
 
-.hero-text a.portfolio i {
+.hero-text a.github i {
     margin-right: 5px;
 }
 
@@ -229,6 +238,24 @@ section {
 .scroll-down i:hover {
     transform: translateY(-5px);
 }
+.scroll-down2 {
+    bottom: 6%;
+    position: absolute;
+    right: 3%;
+}
+
+.scroll-down2 i {
+    background-color: #1b4f72;
+    border-radius: 30px;
+    display: block;
+    font-size: 25px;
+    padding: 12px;
+    transition: all .5s  ease;
+}
+
+.scroll-down2 i:hover {
+    transform: translateY(-5px);
+}
 
 .about-me {
     align-items: center;
@@ -261,7 +288,8 @@ section {
     text-indent: 40px;
     text-shadow: 1px 1px 3px #7f8383b7;
 }
-.about-me b{
+
+.about-me b {
     color: #ffc70b;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px white;
@@ -273,8 +301,67 @@ section {
     margin: 10% 0 0 10%;
 }
 
+.portfolio {
+    align-items: center;
+    background:linear-gradient(245.59deg, #1b4f72 0%, #427ea5 25%, #5dade2 75%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
 
+.portfolio-text h2 {
+    color: white;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin: 0 0 3%;
+    padding-top: 3%;
+    text-shadow: 1px 1px 1px #616a6b;
+}
 
+.portfolio-text p {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.9;
+    margin-bottom: 3%;
+    text-align: left;
+    text-indent: 40px;
+    text-shadow: 1px 1px 1px #616a6b;
+}
+
+.portfolio-vid {
+    justify-content: space-evenly;
+    height: auto;
+    width: 400px;
+    margin: 0 0 0 10%;
+}
+
+.portfolio-vid a {
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    padding: 5px 15px;
+    text-shadow: 1px 1px 2px #616a6b;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.portfolio-vid a:hover{
+    background-color: #343535;
+    border: none;
+}
+.portfolio-vid a.clinica{
+    margin-left: 40px;
+}
 
 /*aca vamos a hacer mediaqueries para que la web sea responsive*/
 @media (max-width:992px) {
@@ -297,7 +384,7 @@ section {
 
     .about-me p {
         font-size: 1.1em;
-        text-align:left ;
+        text-align: left;
     }
 
     .hero-img {
