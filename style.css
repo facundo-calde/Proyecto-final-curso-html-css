@@ -330,7 +330,7 @@ section {
     font-weight: 800;
     justify-content: center;
     margin-bottom: 2%;
-    padding-top: 4%;
+    padding-top: 6%;
     text-align: center;
     text-shadow: 1px 1px 3px #7f8383b7;
     text-transform: uppercase;
@@ -360,7 +360,7 @@ section {
     font-size: 21px;
     font-weight: 800;
     margin-bottom: 2%;
-    padding-top: 4%;
+    padding-top: 6%;
     text-align: center;
     text-shadow: 1px 1px 3px #7f8383b7;
     text-transform: uppercase;
@@ -400,7 +400,7 @@ section {
     font-size: 21px;
     font-weight: 800;
     margin-bottom: 2%;
-    padding-top: 4%;
+    padding-top: 6%;
     text-align: center;
     text-shadow: 1px 1px 3px #7f8383b7;
     text-transform: uppercase;
@@ -458,6 +458,7 @@ section {
 
 
 .contact-link {
+    justify-self: center;
     height: auto;
     margin-top: 10%;
     text-align: center;
