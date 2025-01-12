@@ -376,7 +376,7 @@ section {
 }
 
 .portfolio-landing a:hover {
-    background-color:#7f838317;
+    background-color:transparent;
     border: 1px solid rgba(0, 0, 0, 0.155);
     box-shadow: 1px 1px 10px #7f8383b7;
     transform: translateY(-10px);
@@ -449,6 +449,9 @@ section {
         margin: 10% 0 0 10%;
         width: 80%;
     }
+    .about-me h3{
+        margin-top: 40px;
+    }
 
     .about-me img {
         width: 80%;
@@ -459,6 +462,9 @@ section {
     }
 
     .scroll-down {
+        display: none;
+    }
+    .scroll-down2 {
         display: none;
     }
 }
