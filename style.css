@@ -273,7 +273,7 @@ section {
     color: #424949;
     font-size: 21px;
     font-weight: 800;
-    margin: 6% 0 2%;
+    margin: 10% 0 2%;
     text-decoration-thickness: 1px;
     text-decoration-color: #424949;
     text-shadow: 1px 1px 2px #777d7db7;
@@ -321,7 +321,7 @@ section {
     height: auto;
     text-align: center;
     width: 30vmax;
-    
+
 }
 
 .portfolio-branding h3 {
@@ -341,14 +341,15 @@ section {
     height: auto;
     transition: all .5s ease;
 }
-.portfolio-branding img:hover{
+
+.portfolio-branding img:hover {
     box-shadow: 1px 1px 10px #7f8383b7;
     transform: translateY(-7px);
-    border: 1px solid rgba(0, 0, 0, 0.155);    
+    border: 1px solid rgba(0, 0, 0, 0.155);
 }
 
 .portfolio-landing {
-    justify-self:center ;
+    justify-self: center;
     height: auto;
     text-align: center;
     width: 30vmax;
@@ -366,7 +367,7 @@ section {
 }
 
 .portfolio-landing a {
-    background-color:white;
+    background-color: white;
     border: 1px solid transparent;
     border-radius: 30px;
     display: inline-block;
@@ -376,7 +377,7 @@ section {
 }
 
 .portfolio-landing a:hover {
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.155);
     box-shadow: 1px 1px 10px #7f8383b7;
     transform: translateY(-10px);
@@ -400,7 +401,7 @@ section {
     font-weight: 800;
     margin-bottom: 2%;
     padding-top: 4%;
-    text-align:center;
+    text-align: center;
     text-shadow: 1px 1px 3px #7f8383b7;
     text-transform: uppercase;
 }
@@ -410,12 +411,87 @@ section {
     height: auto;
     transition: all .5s ease;
 }
+
 .portfolio-marketing video:hover {
     box-shadow: 1px 1px 10px #7f8383b7;
     border: 1px solid rgba(0, 0, 0, 0.155);
     transform: translateY(-8px);
 }
 
+.contact {
+    background: #f3f3f3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.contact-text {
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.contact-text h3 {
+    color: #424949;
+    font-size: 21px;
+    font-weight: 800;
+    margin: 10% 0 2%;
+    text-align: left;
+    text-shadow: 1px 1px 3px #7f8383b7;
+    text-transform: uppercase;
+}
+
+.contact-text p {
+    color: #424949;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.9;
+    margin-top: 15%;
+    text-align: left;
+    text-indent: 40px;
+    text-shadow: 1px 1px 3px #7f8383b7;
+}
+
+
+
+.contact-link {
+    height: auto;
+    margin-top: 10%;
+    text-align: center;
+    width: 30vmax;
+
+}
+
+.contact-link a {
+    background-color: white;
+    border: 1px solid #7f8383a5;
+    border-radius: 30px;
+    display: inline-block;
+    height: auto;
+    margin: 10%;
+    padding: 5px;
+    transition: all .5s ease;
+    width: 30%;
+}
+
+.contact-link a:hover {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.155);
+    box-shadow: 1px 1px 10px #7f8383b7;
+    transform: translateY(-10px);
+}
+
+.contact-link i {
+    color: black;
+    font-size: 30px;
+}
+
+.contact-link i:hover {
+    color: #5dade2;
+}
 
 /*aca vamos a hacer mediaqueries para que la web sea responsive*/
 @media (max-width:992px) {
@@ -449,7 +525,8 @@ section {
         margin: 10% 0 0 10%;
         width: 80%;
     }
-    .about-me h3{
+
+    .about-me h3 {
         margin-top: 40px;
     }
 
@@ -464,6 +541,7 @@ section {
     .scroll-down {
         display: none;
     }
+
     .scroll-down2 {
         display: none;
     }
@@ -473,6 +551,7 @@ section {
     header {
         justify-content: end;
     }
+
     .menu-icon-action {
         display: block;
     }
@@ -502,9 +581,11 @@ section {
         height: 100%;
         justify-self: center;
     }
-    .about-me h3{
+
+    .about-me h3 {
         margin-top: 60px;
     }
+
     .portfolio {
         display: block;
         gap: 1rem;
@@ -516,11 +597,12 @@ section {
     .portfolio-branding {
         margin: 5% 0 5%;
     }
-    
-    .portfolio-branding h3{
+
+    .portfolio-branding h3 {
         margin-top: 50px;
     }
-    .portfolio-branding img{
+
+    .portfolio-branding img {
         height: auto;
         margin-top: 7px;
         width: 90%;
@@ -529,21 +611,34 @@ section {
     .portfolio-landing {
         margin: 5% 0 5%;
     }
-    .portfolio-landing img{
+
+    .portfolio-landing img {
         height: auto;
         margin-top: 7px;
         width: 90%;
-        
+
     }
 
-    .portfolio-marketing{
+    .portfolio-marketing {
         margin: 5% 0 5%;
     }
 
-    .portfolio-marketing video{
+    .portfolio-marketing video {
         height: auto;
         margin-top: 7px;
         width: 90%;
+    }
+
+    .contact {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        height: 100%;
+        justify-self: center;
+    }
+
+    .contact-link {
+        justify-self: center;
+
     }
 
     .hero {
